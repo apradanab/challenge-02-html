@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
+<!-- Estructurar como se quiera dentro de unas normas de semántica, es subjetivo el concepto de estructuración correcta -->
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> <!--es un estandar, premite codificar toda la tipografia conocida--> <!--  -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- meta name="description" content="elquesea" -->
   <link rel="icon" href="favicon.svg" type="image/x-icon">
   <title>Spotify</title>
 </head>
 
 <body>
-  <header>
-    <h1><img src="https://www.svgrepo.com/show/512899/spotify-162.svg" alt="spotify-icon" width="20">Spotify</h1>
+  <header><!-- con role y la etiqueta aria la imagen es accesible para CSS -->
+    <h1 role="heading" aria-label="Spotify"><img src="https://www.svgrepo.com/show/512899/spotify-162.svg"
+        alt="spotify-icon" width="20">Spotify</h1>
     <nav>
+      <!-- agrupar nav dentro de nav no tiene sentido sentido nav dentro de div sí. En este caso podría meter el h1 y nav dentro de un div, categorizar los div con class -->
       <ul>
         <li>
           <a href="">Premium</a>
@@ -32,11 +36,12 @@
 
     </nav>
   </header>
-  <main>
+  <main> <!-- class="heroe", es habitual que la presentación de una pagina se clasifique así -->
     <section>
       <h2>Prueba Premium gratis durante 2 meses</h2>
       <h3>Disfruta de música sin anuncios y sin interrupciones cuando quieras y en cualquier parte.</h3>
       <button type="submit">Probar gratis durante 2 meses</button>
+      <!--si le metes un tabindex="0" mejoras la accesibilidad, el tab pasaria a ese lugar al pulsarlo  -->
       <button type="submit">Ver todos los planes Premium</button>
       <h4>Solo para el plan Individual. Después, 10,99 € al mes. Consulta los Términos y condiciones. Oferta válida
         únicamente para quienes aún no hayan probado Premium. La oferta termina el 29/2/24.</h4>
